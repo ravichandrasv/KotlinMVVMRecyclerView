@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold"
+            android:text="q" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_below="@+id/textViewName"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/button_onoff_indicator_on" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:textSize="@dimen/sp_15"
+            android:layout_below="@+id/textViewName"
+            android:layout_toStartOf="@+id/imageView" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
